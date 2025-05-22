@@ -446,9 +446,8 @@ footer a{
 }
 
 
-/* 1277px */
-@media (max-width: 1200px) 
-{ 
+/* 1200px */
+@media (max-width: 1200px) {
   .container {
     width: 100%;
     height: 100vh;
@@ -456,18 +455,18 @@ footer a{
   .image {
     width: 30%;
   }
-  .panelpresentation{
+  .panelpresentation {
     height: 50%;
   }
   .panelpresentation h1 {
     font-size: 65px;
   }
-
   .panelpresentation h2 {
     font-size: 30px;
   }
 }
-/* 915px */
+
+/* 992px */
 @media (max-width: 992px) {
   .image {
     width: 35%;
@@ -475,36 +474,35 @@ footer a{
   .container-sobre {
     width: 90%;
   }
-  .panelpresentation{
+  .panelpresentation {
     height: 25%;
   }
   .panelpresentation h1 {
     font-size: 40px;
   }
-
   .panelpresentation h2 {
     font-size: 30px;
   }
-  .sobre{
+  .sobre {
     padding: 0;
   }
-    .sobre p{
+  .sobre p {
     font-size: 20px;
   }
   .servicos {
     width: 90%;
     height: auto;
   }
-  .servicos p{
+  .servicos p {
     font-size: 20px;
   }
-   .menu-toggle {
+  .menu-toggle {
     display: block;
   }
   .item-lateral {
     position: fixed;
-    right: 0;         /* Altere de left: 0 para right: 0 */
-    left: auto;       /* Garante que não há conflito */
+    right: 0;
+    left: auto;
     top: 0;
     width: 220px;
     height: 100vh;
@@ -514,9 +512,9 @@ footer a{
     align-items: flex-start;
     padding-top: 60px;
     z-index: 2000;
-    transform: translateX(100%); /* Altere de -100% para 100% */
+    transform: translateX(100%);
     transition: transform 0.3s;
-    box-shadow: -2px 0 10px #00000044; /* Sombra para a esquerda */
+    box-shadow: -2px 0 10px #00000044;
     display: flex;
   }
   .item-lateral.open {
@@ -543,13 +541,14 @@ footer a{
     text-decoration: none;
   }
 }
-/* 580px */
-@media (max-width: 774px ) {
+
+/* 774px */
+@media (max-width: 774px) {
   .container {
     width: 100%;
     height: 100vh;
   }
-  .image{
+  .image {
     width: 55%;
   }
   .container-sobre {
@@ -557,27 +556,26 @@ footer a{
     height: auto;
     font-size: 0;
   }
-    .panelpresentation{
+  .panelpresentation {
     height: 20%;
   }
   .panelpresentation h1 {
     font-size: 40px;
   }
-
   .panelpresentation h2 {
     font-size: 30px;
   }
-.sobre{
+  .sobre {
     padding: 0;
   }
-   .sobre p{
+  .sobre p {
     font-size: 15px;
   }
   .servicos {
     width: 90%;
     height: auto;
   }
-  .servicos p{
+  .servicos p {
     font-size: 15px;
   }
   .contato {
@@ -586,12 +584,13 @@ footer a{
   }
 }
 
-@media  (max-width: 600px) {
+/* 600px */
+@media (max-width: 600px) {
   .container {
     width: 100%;
     height: 100vh;
   }
-  .image{
+  .image {
     width: 70%;
   }
   .container-sobre {
@@ -599,39 +598,37 @@ footer a{
     height: auto;
     font-size: 0;
   }
-    .panelpresentation{
+  .panelpresentation {
     height: 20%;
   }
   .panelpresentation h1 {
-    font-size: 40px;
-  }
-
-  .panelpresentation h2 {
     font-size: 30px;
   }
-  
-/* 280px */
-@media (max-width: 320px) {
-  .image{
-    width: 100%;
+  .panelpresentation h2 {
+    font-size: 20px;
+  }
+}
+
+/* 420px */
+@media (max-width: 420px) {
+  .image {
+    width: 80%;
   }
   .container-sobre {
     width: 90%;
   }
-  .sobre{
+  .sobre {
     padding: 0;
   }
-   .sobre p{
-    font-size: 15px;
-   }
-
-  .servicos{
+  .sobre p {
     font-size: 15px;
   }
-  .servicos p{
+  .servicos {
+    font-size: 15px;
+  }
+  .servicos p {
     font-size: 15px;
     padding: 0;
     margin: 0;
   }
-}
 }
