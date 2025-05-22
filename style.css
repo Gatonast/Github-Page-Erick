@@ -10,7 +10,7 @@ html, body {
   font-family: "Montserrat", serif;
   background-color: #0f0f0f;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: hidden
 }
 
 header {
