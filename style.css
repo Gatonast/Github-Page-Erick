@@ -592,7 +592,7 @@ footer a{
 }
 
 /* Celulares pequenos (de 180px até 480) */
-@media (min-width: 180px) and (max-width: 480px) 
+@media (min-width: 180px)
 {
   .image {
     width: 200px;
