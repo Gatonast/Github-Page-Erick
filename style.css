@@ -10,6 +10,7 @@ html, body {
   font-family: "Montserrat", serif;
   background-color: #0f0f0f;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 header {
@@ -96,8 +97,6 @@ nav ul li a:hover {
   width: fit-content;
 }
 
-
-
 .container {
   display: flex;
   justify-content: center;
@@ -113,13 +112,11 @@ nav ul li a:hover {
 }
 
 .image {
-  width: 35%;
-  min-width: 30%;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 25%;
   animation: subirEdescerContinuo 2s infinite alternate linear;
-   margin: auto 0;
-   justify-content: center;
-    display: flex
+  
 ;
 }
 
@@ -139,39 +136,26 @@ nav ul li a:hover {
 
 .containertitle
 {
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-flow: wrap;
-    margin: 0 auto;
     height: 80vh;
-    width: 80%;
+    width: 95%;
     background-color: rgba(24, 24, 24, 0.199);
     border-radius: 20px;
     box-shadow: #0000007a 0px 0px 20px;
     padding: 20px;
 }
 /* conteiner titulo */
-.containtitle
+.containertitle
 {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
   color: white;
-  padding: 0 0 20px 0;
   text-align: center;
-  font-size: 24px;
-  font-weight: 300; 
 }
 
-.titulo {  
-  display: flex;
-  flex-direction: column;
-}
-
-
-.titulo h1 {
+.containertitle h1 {
   font-weight: 100;
   font-size: 80px;
   border-right: 1px solid white;
@@ -191,14 +175,23 @@ nav ul li a:hover {
 }
 
 
-.titulo h2{
+.containertitle h2{
   color: rgb(252, 176, 13);
   text-shadow: 0 0 10px rgb(252, 176, 13);
   font-weight: 300;
   font-size: 40px;
-  margin: 0 0 10px 0;
 }
-
+.panelpresentation{
+  display: flex;
+  margin: auto 20px;
+  height: 50%;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(17, 17, 17, 0.767);
+  box-shadow: #ffa60077 0px 0px 10px;
+}
 /* fecha conteiner */
 
 /* conteiner sobre */
@@ -463,10 +456,20 @@ footer a{
 /* 915px */
 @media (max-width: 915px) {
   .image {
-    width: 55%;
+    width: 40%;
   }
   .container-sobre {
     width: 90%;
+  }
+  .panelpresentation{
+    height: 30%;
+  }
+  .panelpresentation h1 {
+    font-size: 65px;
+  }
+
+  .panelpresentation h2 {
+    font-size: 30px;
   }
   .sobre{
     padding: 0;
@@ -533,12 +536,22 @@ footer a{
     height: 100vh;
   }
   .image{
-    width: 60%;
+    width: 55%;
   }
   .container-sobre {
     width: 90%;
     height: auto;
     font-size: 0;
+  }
+    .panelpresentation{
+    height: 30%;
+  }
+  .panelpresentation h1 {
+    font-size: 65px;
+  }
+
+  .panelpresentation h2 {
+    font-size: 30px;
   }
 .sobre{
     padding: 0;
