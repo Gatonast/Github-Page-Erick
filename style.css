@@ -525,8 +525,8 @@ footer a{
     text-decoration: none;
   }
 }
-/* Tablets e notebooks pequenos (de 785px até 992px) */
-@media (min-width: 786px) and (max-width: 992px) {
+/* Tablets e notebooks pequenos (de 799px até 992px) */
+@media (min-width: 799px) and (max-width: 992px) {
   .image {
     width: 250px;
   }
@@ -560,8 +560,8 @@ footer a{
   }
 }
 
-/* Celulares médios e tablets pequenos (de 481px até 784px) */
-@media (min-width: 481px) and (max-width: 785px) 
+/* Celulares médios e tablets pequenos (de 481px até 800px) */
+@media (min-width: 481px) and (max-width: 800px) 
 {
   .image {
     width: 250px;
