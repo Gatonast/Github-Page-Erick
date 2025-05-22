@@ -19,11 +19,12 @@ header {
   align-items: center;
   justify-content: space-between;
   color: #fff;
-  padding: 10px 20px;
+  padding: 20px;
   width: 100%;
   transform: translateY(-100%);
   transition: transform 0.5s ease;
   z-index: 1000;
+  background-color: rgb(24, 24, 24);
 }
 
 header.show {
