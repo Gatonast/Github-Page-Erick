@@ -6,7 +6,7 @@
 
 body , html {
   background-size: cover;
-  background-image: url("/assets/images/background-desktop.png");
+  background-image: url("assets/images/background-desktop.png");
   font-family: "Inconsolata", monospace;
 }
 
