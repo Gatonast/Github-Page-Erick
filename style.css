@@ -477,40 +477,8 @@ footer a{
   }
 }
 
-/* Tablets e notebooks pequenos (de 769px até 992px) */
-@media (min-width: 769px) and (max-width: 992px) {
-  .image {
-    width: 250px;
-  }
-
-  .container-sobre,
-  .servicos,
-  .contato {
-    width: 90%;
-    height: auto;
-  }
-
-  .panelpresentation {
-    height: 25%;
-  }
-
-  .panelpresentation h1 {
-    font-size: 40px;
-  }
-
-  .panelpresentation h2 {
-    font-size: 30px;
-  }
-
-  .sobre {
-    padding: 0;
-  }
-
-  .sobre p,
-  .servicos p {
-    font-size: 20px;
-  }
-
+@media (max-width: 992px) {
+ 
   .menu-toggle {
     display: block;
   }
@@ -558,6 +526,40 @@ footer a{
     color: #fff;
     text-align: left;
     text-decoration: none;
+  }
+}
+/* Tablets e notebooks pequenos (de 769px até 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .image {
+    width: 250px;
+  }
+
+  .container-sobre,
+  .servicos,
+  .contato {
+    width: 90%;
+    height: auto;
+  }
+
+  .panelpresentation {
+    height: 25%;
+  }
+
+  .panelpresentation h1 {
+    font-size: 40px;
+  }
+
+  .panelpresentation h2 {
+    font-size: 30px;
+  }
+
+  .sobre {
+    padding: 0;
+  }
+
+  .sobre p,
+  .servicos p {
+    font-size: 20px;
   }
 }
 
