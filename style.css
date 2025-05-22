@@ -590,3 +590,34 @@ footer a{
     font-size: 16px;
   }
 }
+
+/* Celulares pequenos (de 180px até 480) */
+@media (min-width: 180px) and (max-width: 480px) 
+{
+  .image {
+    width: 200px;
+  }
+
+  .container-sobre,
+  .servicos,
+  .contato {
+    width: 90%;
+  }
+
+  .panelpresentation {
+    height: 20%;
+  }
+
+  .panelpresentation h1 {
+    font-size: 30px;
+  }
+
+  .panelpresentation h2 {
+    font-size: 20px;
+  }
+
+  .sobre p,
+  .servicos p {
+    font-size: 14px;
+  }
+}
