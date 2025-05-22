@@ -114,10 +114,9 @@ nav ul li a:hover {
 .image {
   display: flex;
   justify-content: center;
-  width: 25%;
+  width: 400px;
+ 
   animation: subirEdescerContinuo 2s infinite alternate linear;
-  
-;
 }
 
 @keyframes subirEdescerContinuo {
@@ -132,10 +131,12 @@ nav ul li a:hover {
 .image img {
   width: 100%;
  margin: auto 0;
+ height: 100%;
 }
 
 .containertitle
 {
+    align-content: center;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
@@ -445,64 +446,79 @@ footer a{
   cursor: pointer;
 }
 
+/* Telas grandes (de 1201px até 1400px) */
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .image {
+    width: 400px;
+  }
+}
 
-/* 1200px */
-@media (max-width: 1200px) {
+/* Desktops médios (de 993px até 1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
   .container {
     width: 100%;
     height: 100vh;
   }
+
   .image {
-    width: 30%;
+    width: 300px;
+    height: auto;
   }
+
   .panelpresentation {
     height: 50%;
   }
+
   .panelpresentation h1 {
     font-size: 65px;
   }
+
   .panelpresentation h2 {
     font-size: 30px;
   }
 }
 
-/* 992px */
-@media (max-width: 992px) {
+/* Tablets e notebooks pequenos (de 769px até 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
   .image {
-    width: 35%;
+    width: 250px;
   }
-  .container-sobre {
-    width: 90%;
-  }
-  .panelpresentation {
-    height: 25%;
-  }
-  .panelpresentation h1 {
-    font-size: 40px;
-  }
-  .panelpresentation h2 {
-    font-size: 30px;
-  }
-  .sobre {
-    padding: 0;
-  }
-  .sobre p {
-    font-size: 20px;
-  }
-  .servicos {
+
+  .container-sobre,
+  .servicos,
+  .contato {
     width: 90%;
     height: auto;
   }
+
+  .panelpresentation {
+    height: 25%;
+  }
+
+  .panelpresentation h1 {
+    font-size: 40px;
+  }
+
+  .panelpresentation h2 {
+    font-size: 30px;
+  }
+
+  .sobre {
+    padding: 0;
+  }
+
+  .sobre p,
   .servicos p {
     font-size: 20px;
   }
+
   .menu-toggle {
     display: block;
   }
+
   .item-lateral {
     position: fixed;
     right: 0;
-    left: auto;
     top: 0;
     width: 220px;
     height: 100vh;
@@ -517,9 +533,11 @@ footer a{
     box-shadow: -2px 0 10px #00000044;
     display: flex;
   }
+
   .item-lateral.open {
     transform: translateX(0);
   }
+
   .item-lateral ul {
     flex-direction: column;
     width: 100%;
@@ -527,11 +545,13 @@ footer a{
     padding: 0;
     margin: 0;
   }
+
   .item-lateral ul li {
     width: 100%;
     border-bottom: 1px solid #333;
     list-style: none;
   }
+
   .item-lateral ul li a {
     display: block;
     width: 100%;
@@ -542,93 +562,64 @@ footer a{
   }
 }
 
-/* 774px */
-@media (max-width: 774px) {
-  .container {
-    width: 100%;
-    height: 100vh;
-  }
+/* Celulares médios e tablets pequenos (de 481px até 768px) */
+@media (min-width: 481px) and (max-width: 768px) 
+{
   .image {
-    width: 55%;
+    width: 250px;
   }
-  .container-sobre {
+
+  .container-sobre,
+  .servicos,
+  .contato {
     width: 90%;
-    height: auto;
-    font-size: 0;
   }
+
   .panelpresentation {
     height: 20%;
   }
+
   .panelpresentation h1 {
-    font-size: 40px;
+    font-size: 35px;
   }
+
   .panelpresentation h2 {
-    font-size: 30px;
+    font-size: 25px;
   }
-  .sobre {
-    padding: 0;
-  }
-  .sobre p {
-    font-size: 15px;
-  }
-  .servicos {
-    width: 90%;
-    height: auto;
-  }
+
+  .sobre p,
   .servicos p {
-    font-size: 15px;
-  }
-  .contato {
-    width: 90%;
-    height: auto;
+    font-size: 16px;
   }
 }
 
-/* 600px */
-@media (max-width: 600px) {
-  .container {
-    width: 100%;
-    height: 100vh;
-  }
+/* Celulares pequenos (de 180px até 480) */
+@media (min-width: 180px) and (max-width: 480px) 
+{
   .image {
-    width: 70%;
+    width: 200px;
   }
-  .container-sobre {
+
+  .container-sobre,
+  .servicos,
+  .contato {
     width: 90%;
-    height: auto;
-    font-size: 0;
   }
+
   .panelpresentation {
     height: 20%;
   }
+
   .panelpresentation h1 {
     font-size: 30px;
   }
+
   .panelpresentation h2 {
     font-size: 20px;
   }
-}
 
-/* 420px */
-@media (max-width: 420px) {
-  .image {
-    width: 80%;
-  }
-  .container-sobre {
-    width: 90%;
-  }
-  .sobre {
-    padding: 0;
-  }
-  .sobre p {
-    font-size: 15px;
-  }
-  .servicos {
-    font-size: 15px;
-  }
+  .sobre p,
   .servicos p {
-    font-size: 15px;
-    padding: 0;
-    margin: 0;
+    font-size: 14px;
   }
 }
