@@ -186,6 +186,7 @@ nav ul li a:hover {
   font-size: 40px;
 }
 .panelpresentation{
+  border-radius: 20px;
   display: flex;
   margin: auto 20px;
   height: 50%;
