@@ -271,16 +271,17 @@ nav ul li a:hover {
 }
 
 .contato{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  color: white;
-  gap: 30px;
-  width: 500px;
-  border-radius: 20px;
-  padding: 20px;
-  background-color: rgba(24, 24, 24, 0.336);
-  box-shadow: #0000007a 0px 0px 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 30px;
+    width: 800px;
+    height: 100px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgba(24, 24, 24, 0.336);
+    box-shadow: #0000007a 0px 0px 20px;
+    justify-content: space-evenly;
 }
 
 .contato h2 {
@@ -404,9 +405,54 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
+.container-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  padding: 20px;
+  margin: 50px auto; /* Centraliza horizontalmente */
+  width: 800px;
+  background-color: rgba(255, 255, 255, 0.137);
+  border-radius: 20px;
+  box-shadow: #ffa60077 0px 0px 10px;
+}
 .redes-sociais {
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 600px;
+  height: 200px;
+}
+
+.redes-sociais a {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.linkedin {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s;
+}
+.linkedin:hover {
+  transform: scale(1.2);
+}
+
+.git {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s;
+}
+.git:hover {
+  transform: scale(1.2);
 }
 
 .scroll-animation {
