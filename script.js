@@ -95,6 +95,15 @@ document.querySelectorAll('a[href="#projetos"]').forEach(link => {
   });
 });
 
+document.querySelectorAll('a[href="#home"]').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const home = document.getElementById('home');
+    const y = home.getBoundingClientRect().top + window.pageYOffset - (window.innerHeight / 2) + (home.offsetHeight / 2);
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  });
+});
+
 const menuToggle = document.getElementById('menuToggle');
 const sideNav = document.getElementById('sideNav');
 
