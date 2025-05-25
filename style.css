@@ -434,6 +434,7 @@ nav ul li a:hover {
   text-decoration: none;
   transition: transform 0.3s;
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 10px;
 }
