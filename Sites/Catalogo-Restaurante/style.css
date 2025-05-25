@@ -11,6 +11,7 @@ html, body{
   font-family: "Montserrat", sans-serif;
     font-weight: 400;
   font-style: normal;
+  overflow-x: hidden;
 }
 
 .header{
@@ -154,4 +155,64 @@ html, body{
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 1024px) {
+    .banner, .bannerbacon-container {
+        width: 100vw;
+        height: 350px;
+    }
+    .bannerbacon {
+        height: 300px;
+    }
+    .main-description {
+        padding: 40px;
+        font-size: 18px;
+    }
+    .group-produtos {
+        height: 120px;
+    }
+    .group {
+        width: 60px;
+        height: 80px;
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+        gap: 10px;
+    }
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .banner, .bannerbacon-container {
+        width: 100vw;
+        height: 180px;
+    }
+    .bannerbacon {
+        height: 120px;
+    }
+    .main-description {
+        font-size: 15px;
+    }
+    .main-produtos {
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .group-produtos {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+    .group {
+        width: 80px;
+        height: 80px;
+    }
 }
