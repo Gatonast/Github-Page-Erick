@@ -356,6 +356,7 @@ nav ul li a:hover {
   border-radius: 20px;
   background-color: rgba(24, 24, 24, 0.336);
   box-shadow: #0000007a 0px 0px 20px;
+  text-align: center;
 }
 
 .projeto{
