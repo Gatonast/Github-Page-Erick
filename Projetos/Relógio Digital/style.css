@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #282c34;
+    color: white;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+     background: linear-gradient(to right, #d11141, #e78616);
+}
+
+.clock
+{
+    width: 700px;   
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: rgba(0, 0, 0, 0.459) 0px 8px 10px;
+    padding: 20px;
+    text-align: center;
+}
+.time
+{   
+    flex-direction: column;
+    width: 200px;
+    height: 220px;
+    border-radius: 20px;
+    box-shadow: black 0px 8px 10px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.hora
+{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.minuto
+{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.segundo
+{
+    font-size: 20px;
+    font-weight: 800;
+}

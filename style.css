@@ -13,6 +13,84 @@ html, body {
   overflow-x: hidden;
 }
 
+.mode{
+  position: fixed;
+  display: flex;
+  z-index: 2000;
+  cursor: pointer;
+  color: white;
+  bottom: 20px;
+  left: 20px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.mode button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   width: 80px;
+  height: 80px; 
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  background-color: rgb(255, 255, 255);
+}
+
+.mode:hover button {
+  background-color: #000000;
+}
+
+.mode:hover .icon-mode {
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.mode:hover .icon-mode::after {
+  background-color: #000000;
+  transition: background-color 0.3s ease;
+}
+
+.icon-mode{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  transform: rotate(-35deg);
+  left: 2px;
+
+}
+
+.icon-mode::after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+   background-color: rgb(255, 255, 255);
+   position: absolute;
+   right: -15px;
+}
+
+
+
+.icon-mode:hover {
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.icon-mode:hover::after {
+  background-color: #000000;
+  transition: background-color 0.3s ease;
+}
+
 header {
   position: fixed;
   display: flex;
@@ -778,4 +856,48 @@ footer a{
     font-size: 10px;
     padding: 5px;
   }
+}
+body.dark-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-theme header,
+body.dark-theme .container-redes,
+body.dark-theme .redes-sociais a,
+body.dark-theme .container-sobre,
+body.dark-theme .container-p,
+body.dark-theme .servicos,
+body.dark-theme .servicos a,
+body.dark-theme .contato {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+body.dark-theme .panelpresentation,
+body.dark-theme .containertitle,
+body.dark-theme .projetos,
+body.dark-theme .projeto,
+body.dark-theme .image,
+body.dark-theme .sobre,
+body.dark-theme .footer {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+body.dark-theme .btn,
+body.dark-theme .baixar {
+  background-color: #222 !important;
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+body.dark-theme nav ul li a {
+  color: #000000 !important;
+}
+
+body.dark-theme .hero, body.dark-theme .frase-impacto {
+  background-color: white !important;
+  color: #000000 !important;
+  text-shadow: 0 0 40px rgb(0, 0, 0);
 }
