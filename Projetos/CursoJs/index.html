@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaProject</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="main-body">
+    <div class="container">
+        <h1 id="texto">Calculadora de IMC</h1>
+        <div class="inputBar" onsubmit="freeze(); return false;">
+    <input  id="nome" type="text" placeholder="Nome">
+      <input  id="altura" type="text" placeholder="Altura">
+        <input  id="peso" type="text" placeholder="Peso">
+          <button id="submit" onclick="calc()">Enviar</button>
+        <div class="total">
+            <p id="resultado">Total: <span id="totalValue">0</span></p>
+        </div>
+    </div>
+      
+
+
+</div>
+        <footer>
+            <p>&copy; 2023 JavaProject. All rights reserved.</p>
+</body>
+</html>

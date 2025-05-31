@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Java</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="tela">
+            <p id="result"></p>
+           
+    </div>
+     <div class="botoes">
+        <div class="coluna1">
+            <button class="botao" onclick="clean('')">C</button>
+                <button class="botao" onclick="insert('()')">()</button>
+                <button class="botao" onclick="back('')"><</button>
+                <button class="botao" onclick="insert('/')">/</button>
+        </div>
+         <div class="numeros">
+        <div class="coluna">
+                <button class="botao" onclick="insert('1')">1</button>
+                <button class="botao" onclick="insert('2')">2</button>
+                <button class="botao" onclick="insert('3')">3</button>
+                </div>
+
+                <div class="coluna">
+                    <button class="botao" onclick="insert('4')">4</button>
+                    <button class="botao" onclick="insert('5')">5</button>
+                    <button class="botao" onclick="insert('6')">6</button>
+                </div>
+
+                <div class="coluna">
+                <button class="botao" onclick="insert('7')">7</button>
+                <button class="botao" onclick="insert('8')">8</button>
+                <button class="botao" onclick="insert('9')">9</button>
+                </div>
+
+                <div class="coluna">
+                    <button class="botao" onclick="insert('.')">.</button>
+                    <button class="botao" onclick="insert('0')">0</button> 
+                    <button class="botao" onclick="insert('2')">+/-</button>
+
+                </div>
+                </div>
+        <div class="coluna2">
+            <button class="botao" onclick="insert('*')">*</button>
+                <button class="botao" onclick="insert('-')">-</button>
+                <button class="botao" onclick="insert('+')">+</button>
+                <button class="botao" onclick="calcular('=')">=</button>
+                </div>
+
+               
+         </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

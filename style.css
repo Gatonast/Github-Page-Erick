@@ -206,7 +206,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column-reverse;
   color: white;
   padding: 20px;
   margin: 50px auto; /* Centraliza horizontalmente */
@@ -223,6 +223,7 @@ nav ul li a:hover {
   color: white;
   width: 100%;
   text-align: center;
+  padding: 10px;
 }
 
 .sobre h2 {
@@ -235,6 +236,56 @@ nav ul li a:hover {
   margin: 5px;
   font-size: 24px; 
 }
+.images-html
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  
+}
+.html, .css, .javascript {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: #ff7707;
+    border-radius: 10px;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+    box-shadow: #000000 0px 0px 10px;
+    
+  }
+
+.css{
+  background-color: #2698e4;
+}
+
+.javascript {
+  background-color: #f7df1e;
+}
+
+.html:hover  {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+  box-shadow: #ff7707 0px 0px 20px;
+}
+
+.javascript:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ;
+  box-shadow: #f7df1e 0px 0px 20px;
+}
+
+ .css:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+  box-shadow: #2698e4 0px 0px 20px;
+}
+
 
 .servicos{
   position: relative;
@@ -656,6 +707,13 @@ footer a{
   .servicos p {
     font-size: 16px;
   }
+  .html, .css, .javascript
+  {
+    width: 80px;
+    height: 80px;
+    font-size: 14px;
+    padding: 5px;
+  }
 }
 
 /* Celulares pequenos (de 180px até 480) */
@@ -712,5 +770,12 @@ footer a{
   .sobre p,
   .servicos p {
     font-size: 14px;
+  }
+  .html, .css, .javascript
+  {
+    width: 50px;
+    height: 50px;
+    font-size: 10px;
+    padding: 5px;
   }
 }
