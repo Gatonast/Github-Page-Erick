@@ -626,6 +626,11 @@ footer a{
   cursor: pointer;
 }
 
+/* Garante que o navegador use apenas as cores do site */
+:root {
+  color-scheme: only light;
+}
+
 /* Telas grandes (de 1201px até 1400px) */
 @media (min-width: 1201px) and (max-width: 1400px) {
   .image {
