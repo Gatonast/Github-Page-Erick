@@ -186,7 +186,7 @@ nav ul li a:hover {
   height: 800px;
   background-color: rgba(24, 24, 24, 0.199);
   border-radius: 20px;
-  box-shadow: #0000007a 0px 0px 20px;
+  box-shadow: #0000001e 0px 0px 20px;
   padding: 20px;
 }
 
@@ -224,7 +224,7 @@ nav ul li a:hover {
     height: 700px;
     background-color: rgba(24, 24, 24, 0.199);
     border-radius: 20px;
-    box-shadow: #0000007a 0px 0px 20px;
+    box-shadow: #00000025 0px 0px 20px;
     padding: 20px;
     gap: 40px;
 }
@@ -273,7 +273,7 @@ nav ul li a:hover {
   align-items: center;
   flex-direction: column;
   background-color: rgba(17, 17, 17, 0.767);
-  box-shadow: #ffa60077 0px 0px 10px;
+  box-shadow: #ffa600 0px 0px 10px;
 }
 /* fecha conteiner */
 
@@ -291,7 +291,7 @@ nav ul li a:hover {
   width: 800px;
   background-color: rgba(31, 31, 31, 0.336);
   border-radius: 20px;
-  box-shadow: #ffa60077 0px 0px 10px;
+  box-shadow: #ffa600 0px 0px 10px;
 }
 .sobre{
   display: flex;
@@ -334,7 +334,7 @@ nav ul li a:hover {
     justify-content: flex-end;
     align-items: flex-end;
     padding: 10px;
-    box-shadow: #000000 0px 0px 10px;
+    box-shadow: #00000067 0px 0px 10px;
     
   }
 
@@ -377,7 +377,7 @@ nav ul li a:hover {
   width: 800px;
   background-color: rgba(31, 31, 31, 0.336);
   border-radius: 20px;
-  box-shadow: #ffa60077 0px 0px 10px;
+  box-shadow: #ffa600 0px 0px 10px;
   text-align: center;
 }
 
@@ -410,7 +410,7 @@ nav ul li a:hover {
     border-radius: 20px;
     padding: 20px;
     background-color: rgba(24, 24, 24, 0.336);
-    box-shadow: #0000007a 0px 0px 20px;
+    box-shadow: #0000001e 0px 0px 20px;
     justify-content: space-evenly;
 }
 
@@ -484,7 +484,7 @@ nav ul li a:hover {
   width: 100%;
   border-radius: 20px;
   background-color: rgba(24, 24, 24, 0.336);
-  box-shadow: #0000007a 0px 0px 20px;
+  box-shadow: #0000002f 0px 0px 20px;
   text-align: center;
 }
 
@@ -492,7 +492,7 @@ nav ul li a:hover {
   width: 500px;
   height: 500px;
   position: relative;   
-  box-shadow: #000000 0px 0px 10px;
+  box-shadow: #0000003a 0px 0px 10px;
   border-radius: 200px;
   clip-path: inset(0 round 22px)
   
@@ -869,7 +869,9 @@ body.dark-theme .container-sobre,
 body.dark-theme .container-p,
 body.dark-theme .servicos,
 body.dark-theme .servicos a,
-body.dark-theme .contato {
+body.dark-theme .contato,
+body.dark-theme .container
+{
   background-color: #ffffff !important;
   color: #000000 !important;
 }
@@ -888,7 +890,7 @@ body.dark-theme .footer {
 body.dark-theme .btn,
 body.dark-theme .baixar {
   background-color: #222 !important;
-  color: #fff !important;
+  color: #ffffff !important;
   border-color: #fff !important;
 }
 
